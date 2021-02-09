@@ -6,18 +6,14 @@
 	<script src="jquery.min.js"></script>
 	<style>
         body {
-        background: url("backgroundimage.jpg") no-repeat center center fixed;;
-        background-color: #cccccc;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0GCPlh5QWgw_VF75ZTCFk-CBLBAFT_y8Dg&usqp=CAU);
+       
         }
 
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: grey;
+			background-color: rgb(241, 66, 66);
 			font-size: 300%;
 			text-align: center;
 			display: block;
@@ -72,8 +68,8 @@
             var positionX = 0;
             var positionY = 0;
             var points = 0;
-            var speed = 10;
-            var speedY = 10;
+            var speed = 15;
+            var speedY = 12;
             var randNumX = getRndInteger(0, boardWidth);
             var randNumY = getRndInteger(0, boardHeight);
 
@@ -112,8 +108,8 @@
                 positionY = randNumY;
                 changeBoxText(points);
                 points++;
-                speed = speed + 3;
-                speedY = speedY + 3;
+                speed = speed + 6;
+                speedY = speedY + 6;
 
             };
             
